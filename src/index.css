@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-4xl font-bold text-center mb-16 text-slate-900;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
+}
